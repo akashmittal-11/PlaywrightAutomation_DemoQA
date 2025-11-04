@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { on } from 'events';
 
 /**
  * Read environment variables from file.
@@ -15,7 +16,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -31,6 +32,13 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    // screenshot: 'on'
+    // video: 'retain-on-failure', // it will record video only when test fails
+    // screenshot: 'only-on-failure', // it will take screenshot only when test fails
+    // video: 'on', // it will record video for all tests
+    // video: 'on-first-retry', // it will record video when retrying the failed test
+    // video: 'off', // default value is off
+
   },
 
   /* Configure projects for major browsers */
