@@ -27,8 +27,6 @@ test.afterEach(async()=>{
 })
 
 
-
-
 test('Hooks',async({})=>{
 
     const userName = await page.locator('#nameofuser').textContent();

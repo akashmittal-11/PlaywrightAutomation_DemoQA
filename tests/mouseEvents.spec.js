@@ -48,3 +48,4 @@ test('Double Click',async({page})=>{
     await expect(expectedMsg).toBe('You have done a double click');
     await page.waitForTimeout(2000);
 })
+

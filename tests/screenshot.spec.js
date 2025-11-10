@@ -12,6 +12,7 @@ test('Full page sceenshot',async({page})=>{
     await page.goto('https://demoqa.com/');
 
     await page.screenshot({path: 'tests\\Screenshots\\fullPage.png',fullPage:true});
+    
 });
 
 test('Element Screenshot',async({page})=>{
