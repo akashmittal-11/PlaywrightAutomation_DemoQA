@@ -37,7 +37,7 @@ test('Handle Multiple Page',async()=>{
     
 })
 
-test.only('Handle Multiple Windows',async()=>{
+test('Handle Multiple Windows',async()=>{
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const page1 = await context.newPage();
@@ -55,5 +55,39 @@ test.only('Handle Multiple Windows',async()=>{
 
     await newPage.waitForTimeout(3000);
     
+})
+
+
+test.only('Handle new page',async()=>{
+
+    const browser = await chromium.launch();
+    const context = await browser.newContext();
+    const page1 = await context.newPage();
+
+    await page1.goto('https://webdriveruniversity.com/index.html');
+
+    const pagePromise = context.waitForEvent('page')
+
+    await page1.locator('#contact-us').click();
+    const newpage = await pagePromise;
+
+    const heading = await newpage.locator("h2[name='contactme']").textContent();
+
+    await expect(heading).toBe('CONTACT US');
+
+    await newpage.getByPlaceholder('First Name').fill('Test');
+    await newpage.getByPlaceholder('Last Name').fill('User');
+    await newpage.getByPlaceholder('Email Address').fill('testuser@mail.com');
+    await newpage.getByPlaceholder('Comments').fill('This is the test comment');
+
+    await newpage.waitForTimeout(3999);
+
+    await newpage.locator("input[value='SUBMIT']").click();
+
+    const head = await newpage.locator("div[id='contact_reply'] h1").textContent();
+
+    await expect(head).toBe('Thank You for your Message!');
+    await newpage.waitForTimeout(3999);
+
 })
 

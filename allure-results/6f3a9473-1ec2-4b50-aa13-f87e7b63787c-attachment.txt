@@ -1,0 +1,6 @@
+{
+    "fruit": "Apple",
+    "size": "Large",
+    "color": "Red"
+}
+Fruit name from the json file is:  Apple

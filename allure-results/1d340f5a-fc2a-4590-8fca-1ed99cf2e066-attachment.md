@@ -1,0 +1,171 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "image not displaying" [ref=e7] [cursor=pointer]:
+        - /url: http://www.automationtesting.in
+        - img "image not displaying" [ref=e8]
+      - heading "Automation Demo Site" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: Index.html
+        - listitem [ref=e17]:
+          - link "Register" [ref=e18] [cursor=pointer]:
+            - /url: Register.html
+        - listitem [ref=e19]:
+          - link "WebTable" [ref=e20] [cursor=pointer]:
+            - /url: WebTable.html
+        - listitem [ref=e21]:
+          - link "SwitchTo" [ref=e22] [cursor=pointer]:
+            - /url: SwitchTo.html
+          - generic [ref=e23]: 
+        - listitem [ref=e24]:
+          - link "Widgets" [ref=e25] [cursor=pointer]:
+            - /url: Widgets.html
+          - generic [ref=e26]: 
+        - listitem [ref=e27]:
+          - link "Interactions" [ref=e28] [cursor=pointer]:
+            - /url: Interactions.html
+          - generic [ref=e29]: 
+        - listitem [ref=e30]:
+          - link "Video" [ref=e31] [cursor=pointer]:
+            - /url: SwitchTo.html
+          - generic [ref=e32]: 
+        - listitem [ref=e33]:
+          - link "WYSIWYG" [ref=e34] [cursor=pointer]:
+            - /url: WYSIWYG.html
+          - generic [ref=e35]: 
+        - listitem [ref=e36]:
+          - link "More" [ref=e37] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e38]: 
+        - listitem [ref=e39]:
+          - link "Practice Site" [ref=e40] [cursor=pointer]:
+            - /url: http://practice.automationtesting.in/
+  - generic [ref=e41]:
+    - generic [ref=e44]:
+      - heading "File Download Demo for Automation" [level=2] [ref=e45]
+      - link "Download" [ref=e47] [cursor=pointer]:
+        - /url: https://github.com//sakinala/AutomationTesting/raw/master/samplefile.pdf
+      - generic [ref=e48]:
+        - generic [ref=e49]: Generated Text File to Download
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: By default Download link will be hidden.
+          - paragraph [ref=e52]: You need to enter data in the textarea and click on 'Generate File' button to activate download link.
+          - paragraph [ref=e53]: Data entered in the below textarea will be download with file name 'info.txt'.
+          - generic [ref=e54]:
+            - generic [ref=e55]: "Enter Data:"
+            - textbox [ref=e56]
+            - generic [ref=e57]: 1000 characters remaining
+          - button "Generate File" [disabled] [ref=e58]
+      - generic [ref=e59]:
+        - generic [ref=e60]: Generated PDF File to Download
+        - generic [ref=e61]:
+          - paragraph [ref=e62]: By default Download link will be hidden.
+          - paragraph [ref=e63]: You need to enter data in the textarea and click on 'Generate File' button to activate download link.
+          - paragraph [ref=e64]: Data entered in the below textarea will be download with file name 'info.pdf'.
+          - generic [ref=e65]:
+            - generic [ref=e66]: "Enter Data:"
+            - textbox [active] [ref=e67]: This is the test Pdf File
+            - generic [ref=e68]: 1000 characters remaining
+          - button "Generate File" [disabled] [ref=e69]
+    - generic [ref=e71]:
+      - insertion [ref=e74]:
+        - generic [ref=e76]:
+          - generic "These are topics related to the article that might interest you" [ref=e77]: Discover more
+          - link "Software Testing" [ref=e78] [cursor=pointer]:
+            - img [ref=e80]
+            - text: Software Testing
+          - link "Testing" [ref=e82] [cursor=pointer]:
+            - img [ref=e84]
+            - text: Testing
+          - link "pdf" [ref=e86] [cursor=pointer]:
+            - img [ref=e88]
+            - text: pdf
+          - link "Test automation" [ref=e90] [cursor=pointer]:
+            - img [ref=e92]
+            - text: Test automation
+          - link "PDF" [ref=e94] [cursor=pointer]:
+            - img [ref=e96]
+            - text: PDF
+          - link "PDF File" [ref=e98] [cursor=pointer]:
+            - img [ref=e100]
+            - text: PDF File
+          - link "Automation Testing" [ref=e102] [cursor=pointer]:
+            - img [ref=e104]
+            - text: Automation Testing
+      - insertion [ref=e108]:
+        - generic [ref=e110]:
+          - generic "These are topics related to the article that might interest you" [ref=e111]: Discover more
+          - link "PDF File" [ref=e112] [cursor=pointer]:
+            - img [ref=e114]
+            - text: PDF File
+          - link "Software Testing" [ref=e116] [cursor=pointer]:
+            - img [ref=e118]
+            - text: Software Testing
+          - link "PDF" [ref=e120] [cursor=pointer]:
+            - img [ref=e122]
+            - text: PDF
+          - link "Test automation" [ref=e124] [cursor=pointer]:
+            - img [ref=e126]
+            - text: Test automation
+          - link "Testing" [ref=e128] [cursor=pointer]:
+            - img [ref=e130]
+            - text: Testing
+          - link "pdf" [ref=e132] [cursor=pointer]:
+            - img [ref=e134]
+            - text: pdf
+          - link "Automation Testing" [ref=e136] [cursor=pointer]:
+            - img [ref=e138]
+            - text: Automation Testing
+      - insertion [ref=e142]:
+        - generic [ref=e144]:
+          - generic "These are topics related to the article that might interest you" [ref=e145]: Discover more
+          - link "Testing" [ref=e146] [cursor=pointer]:
+            - img [ref=e148]
+            - text: Testing
+          - link "Automation Testing" [ref=e150] [cursor=pointer]:
+            - img [ref=e152]
+            - text: Automation Testing
+          - link "Software Testing" [ref=e154] [cursor=pointer]:
+            - img [ref=e156]
+            - text: Software Testing
+          - link "pdf" [ref=e158] [cursor=pointer]:
+            - img [ref=e160]
+            - text: pdf
+          - link "Test automation" [ref=e162] [cursor=pointer]:
+            - img [ref=e164]
+            - text: Test automation
+          - link "PDF" [ref=e166] [cursor=pointer]:
+            - img [ref=e168]
+            - text: PDF
+          - link "PDF File" [ref=e170] [cursor=pointer]:
+            - img [ref=e172]
+            - text: PDF File
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - text: "\"@ 2016\""
+        - link "Automation Testing" [ref=e178] [cursor=pointer]:
+          - /url: "#"
+        - text: "\"All Rights Reserved.\""
+      - generic [ref=e179]:
+        - link "" [ref=e180] [cursor=pointer]:
+          - /url: https://www.facebook.com/automationtesting2016/
+          - generic [ref=e181]: 
+        - link "" [ref=e182] [cursor=pointer]:
+          - /url: https://twitter.com/krishnasakinala
+          - generic [ref=e183]: 
+        - link "" [ref=e184] [cursor=pointer]:
+          - /url: https://www.linkedin.com/nhome/?trk=hb_signin
+          - generic [ref=e185]: 
+        - link "" [ref=e186] [cursor=pointer]:
+          - /url: https://plus.google.com/105286300926085335367
+          - generic [ref=e187]: 
+        - link "" [ref=e188] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg
+          - generic [ref=e189]: 
+```
